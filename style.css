@@ -125,3 +125,56 @@ span {
   color: #fff;
   font-style: italic;
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /* background: #0d1117; */
+  align-items: center;
+  margin-top: 3rem;
+}
+#email,
+#first-name,
+#last-name {
+  width: 100%;
+}
+.input-form label {
+  color: white;
+}
+.input-form label,
+p {
+  color: white;
+}
+.input-form input {
+  padding: 5px;
+  /* width: 100%; */
+  border: 1px solid #fff;
+  background: transparent;
+  color: #1f6feb;
+  border-radius: 10px;
+}
+#file {
+  border: none;
+}
+textarea {
+  resize: none;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+  color: #1f6feb;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+#submit {
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+#submit:hover {
+  background: #1f6feb;
+  border: 1px solid #1f6feb;
+}
