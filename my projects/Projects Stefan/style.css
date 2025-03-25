@@ -1,0 +1,137 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-direction: row;
+}
+.logo a {
+  font-size: 2vh;
+  position: relative;
+  margin: 0 30px;
+  top: 40px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.fa-music {
+  color: #fff;
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+.social-media {
+  display: flex;
+  justify-content: end;
+}
+.social-media i {
+  position: relative;
+  color: #fff;
+  font-size: 15pt;
+  margin: 0 10px;
+  top: -30px;
+  left: -30px;
+  transition: all ease-in-out 0.3s;
+}
+.social-media i:hover {
+  color: #388bfd;
+}
+.links a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+}
+.links li{
+  margin: 1.2rem;
+}
+.links a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  top: 40px;
+}
+.links a:hover::after {
+  background: #388bfd;
+}
+.active::after {
+  background: #388bfd !important;
+}
+
+body{
+  background: #252a31;
+}
+
+@media screen and (max-width: 1000px){
+  .links ul {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+  .links a::after{
+    top: 30px;
+  }
+  .social-media {
+    justify-content: center;
+    position: relative;
+    top: 50px;
+  }
+  .about-me{
+    margin: 1rem;
+  }
+}
+span {
+  color: #388bfd;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 120px;
+}
+.about-me p {
+  color: #fff;
+}
+/*  
+.contact {
+  position: relative;
+  left: -23%;
+  top: 200px; 
+  display: inline-block;
+}
+  */
+.contact-me-btn {
+  position: relative;
+  top: 50px;
+  padding: 12px;
+  border: 1px solid #388bfd;
+  color: #fff;
+  background: #388bfd;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all ease-in-out 0.5s;
+}
+.container a:hover {
+  box-shadow: 0 0 10px 0 #388bfd inset, 0 0 20px 2px #388bfd;
+}
+footer {
+ display: flex;
+ justify-content: center;
+ position: relative;
+ top: 520px;
+  color: #fff;
+}

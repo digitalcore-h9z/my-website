@@ -113,6 +113,9 @@ span {
     display: block;
     transform: translate(50px, 0px);
   }
+  .about {
+    margin: 4rem;
+  }
 }
 
 .about {
@@ -177,4 +180,9 @@ textarea {
 #submit:hover {
   background: #1f6feb;
   border: 1px solid #1f6feb;
+}
+.my-projects p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
