@@ -186,3 +186,46 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+.sidebar-blog {
+  display: flex;
+}
+.blog-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+.blog-links li {
+  margin: 2rem;
+}
+.blog-links li {
+  margin: 2rem;
+}
+.blog-links a:hover {
+  color: #1f6feb;
+}
+.blog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+  margin-top: 10rem;
+}
+.blog-content a {
+  border: 1px solid  #1f6feb;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+.blog-content a:hover {
+  background: #1f6feb;
+}
+.blog-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 12rem; */
+
+}
