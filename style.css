@@ -116,7 +116,7 @@ span {
   .about {
     margin: 4rem;
   }
-  .sidebar-blog, .blog-description {
+  .sidebar-blog, .blog-description, .blog-content {
     margin: 4rem;
   }
 }
