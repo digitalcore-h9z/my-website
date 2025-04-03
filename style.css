@@ -116,7 +116,9 @@ span {
   .about {
     margin: 4rem;
   }
-  .sidebar-blog, .blog-description, .blog-content {
+  .sidebar-blog,
+  .blog-description,
+  .blog-content {
     margin: 4rem;
   }
 }
@@ -196,6 +198,7 @@ textarea {
   text-decoration: none;
   color: #fff;
   transition: all ease-in-out 0.3s;
+  font-style: italic;
 }
 .blog-links li {
   margin: 2rem;
@@ -215,11 +218,12 @@ textarea {
   margin-top: 10rem;
 }
 .blog-content a {
-  border: 1px solid  #1f6feb;
+  border: 1px solid #1f6feb;
   text-decoration: none;
   color: #fff;
   padding: 10px;
   border-radius: 50px;
+  font-style: italic;
 }
 .blog-content a:hover {
   background: #1f6feb;
@@ -230,5 +234,12 @@ textarea {
   align-items: center;
   flex-direction: column;
   /* margin-top: 12rem; */
+}
 
+.blog-description,
+.blog-content p {
+  font-style: italic;
+}
+.blog-content h3 {
+  color: #fff;
 }
