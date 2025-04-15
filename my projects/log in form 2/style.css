@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container,
+form,
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  position: relative;
+  top: 250px;
+}
+.form-input,
+.form {
+  backdrop-filter: blur(40px);
+  width: 350px;
+  height: 400px;
+  color: #fff;
+  border-radius: 10px;
+}
+#username,
+#password {
+  background: transparent;
+  padding: 10px;
+  width: 80%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  transition: all ease-in-out 0.2s;
+}
+#username:focus,
+#password:focus {
+  outline: #b62324;
+}
+#username:hover,
+#password:hover {
+  box-shadow: 0 0 10px 0 #b62324 inset, 0 0 20px 2px #b62324;
+}
+#username::placeholder,
+#password::placeholder {
+  color: #fff;
+}
+#remember-me {
+  position: relative;
+  left: -70px;
+  top: 15px;
+}
+
+body {
+  background-image: linear-gradient(
+      67.5deg,
+      rgb(235, 73, 66) 0%,
+      rgb(235, 73, 66) 14%,
+      rgb(197, 76, 57) 14%,
+      rgb(197, 76, 57) 36%,
+      rgb(159, 78, 48) 36%,
+      rgb(159, 78, 48) 42%,
+      rgb(121, 81, 39) 42%,
+      rgb(121, 81, 39) 45%,
+      rgb(83, 84, 29) 45%,
+      rgb(83, 84, 29) 79%,
+      rgb(45, 86, 20) 79%,
+      rgb(45, 86, 20) 83%,
+      rgb(7, 89, 11) 83%,
+      rgb(7, 89, 11) 100%
+    ),
+    linear-gradient(
+      112.5deg,
+      rgb(235, 73, 66) 0%,
+      rgb(235, 73, 66) 14%,
+      rgb(197, 76, 57) 14%,
+      rgb(197, 76, 57) 36%,
+      rgb(159, 78, 48) 36%,
+      rgb(159, 78, 48) 42%,
+      rgb(121, 81, 39) 42%,
+      rgb(121, 81, 39) 45%,
+      rgb(83, 84, 29) 45%,
+      rgb(83, 84, 29) 79%,
+      rgb(45, 86, 20) 79%,
+      rgb(45, 86, 20) 83%,
+      rgb(7, 89, 11) 83%,
+      rgb(7, 89, 11) 100%
+    ),
+    linear-gradient(
+      22.5deg,
+      rgb(235, 73, 66) 0%,
+      rgb(235, 73, 66) 14%,
+      rgb(197, 76, 57) 14%,
+      rgb(197, 76, 57) 36%,
+      rgb(159, 78, 48) 36%,
+      rgb(159, 78, 48) 42%,
+      rgb(121, 81, 39) 42%,
+      rgb(121, 81, 39) 45%,
+      rgb(83, 84, 29) 45%,
+      rgb(83, 84, 29) 79%,
+      rgb(45, 86, 20) 79%,
+      rgb(45, 86, 20) 83%,
+      rgb(7, 89, 11) 83%,
+      rgb(7, 89, 11) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgb(235, 73, 66) 0%,
+      rgb(235, 73, 66) 14%,
+      rgb(197, 76, 57) 14%,
+      rgb(197, 76, 57) 36%,
+      rgb(159, 78, 48) 36%,
+      rgb(159, 78, 48) 42%,
+      rgb(121, 81, 39) 42%,
+      rgb(121, 81, 39) 45%,
+      rgb(83, 84, 29) 45%,
+      rgb(83, 84, 29) 79%,
+      rgb(45, 86, 20) 79%,
+      rgb(45, 86, 20) 83%,
+      rgb(7, 89, 11) 83%,
+      rgb(7, 89, 11) 100%
+    ),
+    linear-gradient(90deg, rgb(169, 5, 29), rgb(51, 13, 59));
+  background-blend-mode: overlay, overlay, overlay, overlay, normal;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  display: block;
+}
+#submit-btn {
+  padding: 7px;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: all ease-in-out 0.2s;
+}
+#submit-btn:hover {
+  background: #b62324;
+  border: 1px solid #b62324;
+}

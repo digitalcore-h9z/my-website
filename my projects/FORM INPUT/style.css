@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-input {
+    backdrop-filter: blur(10px);
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+body{
+    background: url(./pexels-eberhardgross-691668\ \(1\).jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    display: block;
+}
+.log-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#username, #password {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 0.5rem;
+    width: 80%;
+}
+#username::placeholder, #password::placeholder {
+    color: #fff;
+}
+.log-in h1 {
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+.login-btn {
+    padding: 12px;
+    width: 80%;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.register-btn, .forgot-pass, label {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-user {
+    position: absolute;
+    top: 117px;
+    right: 70px;
+    color: #fff;
+}
+.fa-lock {
+    position: absolute;
+    top: 175px;
+    right: 70px;
+    color: #fff;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem;
+    color: #fff;
+}
+input:focus {
+    outline: 1px solid #fff;
+}
