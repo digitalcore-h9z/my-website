@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family: 'Poppins';
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ body {
   display: block;
 }
 .logo-name {
-  font-size: 20pt;
+  /* font-size: 20pt; */
   position: relative;
   top: 20px;
   color: #00bfff;
