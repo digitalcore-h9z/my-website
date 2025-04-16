@@ -152,6 +152,15 @@ span {
     padding-bottom: 200px;
     margin-left: 1rem;
   }
+  .blog p {
+    font-size: 11pt;
+  }
+  .blog iframe {
+    width: 150%;
+  }
+  .contact {
+    padding-bottom: 200px;
+  }
 }
 
 .about {

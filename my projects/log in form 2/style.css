@@ -133,15 +133,24 @@ body {
   display: block;
 }
 #submit-btn {
-  padding: 7px;
+  padding: 10px;
   background: transparent;
   cursor: pointer;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 10px;
+  width: 70%;
   transition: all ease-in-out 0.2s;
 }
 #submit-btn:hover {
   background: #b62324;
   border: 1px solid #b62324;
+}
+.reset-pass {
+  text-decoration: none;
+  color: white;
+
+}
+.reset-pass:hover {
+  text-decoration: underline;
 }
