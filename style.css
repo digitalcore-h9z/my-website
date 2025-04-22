@@ -7,22 +7,22 @@
 html {
   scroll-behavior: smooth;
 }
+/* Nav Section Start */
 nav a {
   position: relative;
   text-decoration: none;
-  color: white;
-  /* font-style: italic; */
+  color: #fff;
 }
 .logo img {
-  width: 4%;
+  width: 3%;
   position: absolute;
-  top: 10px;
+  top: 20px;
 }
 nav a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -15px;
+  bottom: -32px;
   width: 0%;
   height: 2px;
   background-color: #00bfff;
@@ -34,29 +34,20 @@ nav a.active::after {
   width: 100%;
 }
 
-body {
-  background: #0f0f0f;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  display: block;
-}
-.logo-name {
-  /* font-size: 20pt; */
-  position: relative;
-  top: 20px;
-  color: #00bfff;
-}
-.nav-links ul,
-li {
+.nav-links ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-links ul,li {
+  list-style: none;
+}
+.nav-links li {
   margin-right: 2rem;
 }
 .nav {
-  /* border-bottom: 1px solid #484f58; */
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: #1c1c1c;
@@ -65,6 +56,19 @@ li {
 .nav-links a {
   transition: all ease-in-out 0.3s;
 }
+
+/* Nav Section End */
+
+body {
+  background: #0f0f0f;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  display: block;
+}
+
+/* Container Section Start */
 
 .container {
   display: flex;
@@ -76,24 +80,39 @@ li {
 }
 .about-me p {
   color: #fff;
-  /* font-style: italic; */
 }
 span {
   color: #00bfff;
 }
 
-.contact-links a {
-  color: #00bfff;
-  border-radius: 50px;
-  border: 1px solid #00bfff;
-  font-size: 1.3rem;
-  padding: 7px;
-  transition: all ease-in-out 0.5s;
-  margin: 0.5rem;
+.social-links a svg {
+  height: 25px;
 }
-.contact-links a:hover {
-  box-shadow: 0 0 10px 0 #00bfff inset, 0 0 20px 2px #00bfff;
+.social-links a {
+  border-radius: 50%;
+  background: #1c1c1c;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  fill: #fff;
 }
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+.tiktok:hover {
+  background-color: #6f1d1b;
+}
+.instagram:hover {
+  background-color: #ff0069;
+}
+.facebook:hover {
+  background-color: #0866ff;
+}
+.youtube:hover {
+  background-color: #ff0000;
+}
+/* Container Section End */
 
 .content-services .services {
   display: flex;
@@ -140,8 +159,8 @@ span {
     margin: 2rem;
   }
   .about {
-     margin: 4rem; 
-     padding-bottom: 100px;
+    margin: 4rem;
+    padding-bottom: 100px;
   }
   .sidebar-blog,
   .blog-description,
@@ -202,8 +221,11 @@ p {
   border-radius: 10px;
   transition: all ease-out 0.2s;
 }
-#email:focus, #first-name:focus, #last-name:focus, textarea:focus {
-  outline: 1px solid  #00bfff;
+#email:focus,
+#first-name:focus,
+#last-name:focus,
+textarea:focus {
+  outline: 1px solid #00bfff;
   box-shadow: 0 0 10px 0 deepskyblue inset, 0 0 10px 2px deepskyblue;
 }
 
