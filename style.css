@@ -216,8 +216,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 200px;
+  height: 100vh;
 }
 .me p {
   color: #fff;
@@ -331,7 +330,7 @@ textarea {
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: 100px;
+  top: 150px;
 }
 
 .blog-content h3 {
