@@ -10,14 +10,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon website" href="./images/logo/logo.png" type="png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon website" href="./images/logo/logo.png" type="png" />
     <title>Blog</title>
   </head>
   <body>
     <nav class="nav">
       <div class="logo">
-        <img src="./images/logo/logo.png" alt="logo">
+        <img src="./images/logo/logo.png" alt="logo" />
       </div>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
       <div class="nav-links">
         <ul>
           <li><a href="./index.html">Home</a></li>
@@ -29,6 +37,7 @@
         </ul>
       </div>
     </nav>
+    <!--  
     <div class="sidebar-blog">
       <div class="blog-links">
         <ul>
@@ -38,8 +47,9 @@
         </ul>
       </div>
     </div>
-
-    <div class="blog-description">
+    -->
+    <script src="script.js"></script>
+    <div class="blog-description" id="blog-description">
       <span> <h1>Welcome to My Tech Tutorial Blog!</h1></span>
       <p>
         <br />
@@ -59,6 +69,66 @@
 
     <div class="blog-content">
       <div class="blog">
+        <h3>
+          How to Create Animated Hover Buttons with HTML & CSS | Beginner
+          Tutorial
+        </h3>
+        <br />
+        <br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/4OATIC2OpOw?si=oGJe31t8Mn0HjiXw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br /><br />
+        <p>
+          Learn how to make animated hover buttons using just <br />
+          <br />HTML and CSS — perfect for beginners!
+        </p>
+        <br />
+        <br />
+        <a
+          href="https://youtu.be/4OATIC2OpOw?si=WBUmPuBeAR2WelNd"
+          target="_blank"
+          >Click now</a
+        >
+
+        <h3>I Built My First Portfolio Website | Frontend Web Development</h3>
+        <br />
+        <br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gugJAkVBoPE?si=8Gg4alfLf9ds9G48"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <br />
+        <p>
+          I share how I created my first portfolio website <br />
+          <br />
+          as a frontend developer, with tips and lessons <br />
+          <br />
+          for beginners
+        </p>
+        <br />
+        <br />
+        <a
+          href="https://youtu.be/gugJAkVBoPE?si=uIB5jkXTnVjCpa-i"
+          target="_blank"
+          >Click now</a
+        >
+        <br />
+        <br />
         <h3>Beginner Frontend Project – Login Page UI</h3>
         <br /><br />
         <iframe
@@ -80,10 +150,14 @@
         </p>
         <br />
         <br />
-        <a href="https://youtu.be/7B6FlX9T4z0?si=xIEOfleHXDdiLL4T">Click now</a>
+        <a
+          href="https://youtu.be/7B6FlX9T4z0?si=xIEOfleHXDdiLL4T"
+          target="_blank"
+          >Click now</a
+        >
       </div>
-      <a href="./blog.html">Back to the top</a>
-      <a href="">Next Page</a>
+      <a href="#blog-description">Back to the top</a>
+      <a href="" class="next-page">Next Page</a>
     </div>
   </body>
 </html>

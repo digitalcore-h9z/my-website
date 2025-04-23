@@ -56,6 +56,14 @@ nav a.active::after {
 .nav-links a {
   transition: all ease-in-out 0.3s;
 }
+#menu-icon{
+  display: none;
+  color: #fff;
+  font-size: 15pt;
+  position: absolute;
+  top: 20px;
+  right: 20%;
+}
 
 /* Nav Section End */
 
@@ -66,6 +74,7 @@ body {
   background-position: center;
   max-width: 100%;
   display: block;
+  width: 100%;
 }
 
 /* Container Section Start */
@@ -75,8 +84,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 13pt;
-  position: relative;
-  top: 200px;
+  height: 100vh;
 }
 .about-me p {
   color: #fff;
@@ -180,6 +188,27 @@ span {
   .contact {
     padding-bottom: 200px;
   }
+  #menu-icon {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 0%;
+    height: 2px;
+    background-color: #00bfff;
+    transition: width 0.3s ease;
+  }
+  
+  nav a:hover::after,
+  nav a.active::after {
+    width: 100%;
+  }
 }
 
 .about {
@@ -196,10 +225,11 @@ span {
 .contact {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   position: relative;
   top: 50px;
+  padding-bottom: 300px;
 }
 #email,
 #first-name,
@@ -214,25 +244,27 @@ p {
   color: #fff;
 }
 .input-form input {
-  padding: 5px;
+  padding: 7px;
   border: 1px solid #fff;
   background: transparent;
   color: #00bfff;
-  border-radius: 10px;
+  border-radius: 50px;
   transition: all ease-out 0.2s;
+  outline: none;
+  margin-top: 1rem;
 }
 #email:focus,
 #first-name:focus,
 #last-name:focus,
 textarea:focus {
-  outline: 1px solid #00bfff;
-  box-shadow: 0 0 10px 0 deepskyblue inset, 0 0 10px 2px deepskyblue;
+  border: 1px solid #00bfff;
 }
 
 #file {
   border: none;
 }
 textarea {
+  outline: none;
   resize: none;
   height: 100%;
   width: 100%;
@@ -244,10 +276,11 @@ textarea {
   transition: all ease-out 0.2s;
 }
 #submit {
+  background-color: #1c1c1c;
   color: #fff;
+  border: 1px solid #1c1c1c;
   padding: 10px;
   border-radius: 20px;
-  transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
 #submit:hover {
@@ -259,23 +292,7 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-.sidebar-blog {
-  display: flex;
-}
-.blog-links a {
-  text-decoration: none;
-  color: #fff;
-  transition: all ease-in-out 0.3s;
-}
-.blog-links li {
-  margin: 2rem;
-}
-.blog-links li {
-  margin: 2rem;
-}
-.blog-links a:hover {
-  color: #00bfff;
-}
+
 .blog-content,
 .blog {
   display: flex;
@@ -285,14 +302,25 @@ textarea {
   margin: 2rem;
   margin-top: 10rem;
 }
-.blog-content a {
-  border: 1px solid #00bfff;
+.blog a {
+  border: 1px solid #1c1c1c;
   text-decoration: none;
   color: #fff;
   padding: 10px;
-  border-radius: 50px;
   margin: 1rem;
+  border-radius: 50px;
+  background-color: #1c1c1c;
 }
+.blog-content a{
+  border: 1px solid #1c1c1c;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  margin: 1rem auto;
+  border-radius: 50px;
+  background-color: #1c1c1c;
+}
+
 .blog-content a:hover {
   background: #00bfff;
 }
@@ -301,6 +329,8 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  top: 100px;
 }
 
 .blog-content h3 {
