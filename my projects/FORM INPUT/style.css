@@ -5,11 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 .container {
-    position: relative;
-    top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .form-input {
     backdrop-filter: blur(10px);
