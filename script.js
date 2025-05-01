@@ -8,3 +8,4 @@ menuIcon.addEventListener('click', () => {
     navLinks.style.display = 'block';
   }
 });
+
